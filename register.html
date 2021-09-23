@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Logup</h1>
+        <form action="api/save.php" method="GET">
+            <input type="text" id="nombre" name="nombre" placeholder="name" class="input" required>
+            <br>
+            <input type="text" id="apellido" name="apellido" placeholder="surname" class="input" required >
+            <br>
+            <input type="email" id="email" name="email" placeholder="email" class="input" required>
+            <br>
+            <input type="password" id="pass" name="password" placeholder="password" class="input" required>
+            <br><br>
+            
+            <div class="btns">
+                <button type="submit" class="btn btn-action">Enviar</button>
+                <a href="index.php"><input type="button" value="Login" class="btn btn-link"></a>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
