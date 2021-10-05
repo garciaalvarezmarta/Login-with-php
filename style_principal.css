@@ -1,20 +1,21 @@
 body{
     padding:0;
     margin:0;
+    
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
+.titleCard{
+    font-family: Arial, Helvetica, sans-serif ;
     
 }
 .container{
     margin-left:150px;
     margin-right: auto;
+    display: flex;
 }
 
 .label{
     position: relative;
-    display:inline-block;
     margin: 30px 120px 30px 30px; /*arriba derecha abajo izquierda*/
     padding-bottom:50px ;
     min-height: 100px;
