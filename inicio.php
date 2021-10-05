@@ -10,6 +10,21 @@
     
 </head>
 <body>
+    <?php
+        include("api/getTasksByUser.php");
+
+        while($row = $result->fetch_row()){
+            printf ("%s (%s)\n", $row[0],$row[1]);
+        }
+
+
+       /* while ($row = mysqli_fetch_array($result,MYSQLI_NUM)) {
+            printf("ID: %s  Nombre: %s", $row[0], $row[1]);  
+        }*/
+            
+        //printf("%s (%s)\n", $row[i], $row[i+1]);
+        
+    ?>
     <div class="container">
         <div class="label">
             <h3 class="titleCard">to Do</h3> 
