@@ -12,6 +12,13 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <?php
+        session_start();
+        if(isset($_SESSION['usuario'])){
+            header('Location: inicio.php');  
+        }
+
+    ?>
     <div class="container">
         <h1 class="title">Login</h1>
             <form action="api/login.php" method="GET">
